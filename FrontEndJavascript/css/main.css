@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #6c7b95;
+}
+
+.delete {
+  border: 0;
+  background: #6b0000;
+  color: white;
+  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.delete:focus {
+  -webkit-box-shadow: 0 0 0 3px #c7f0db, 0 0 0 6px #6b0000;
+          box-shadow: 0 0 0 3px #c7f0db, 0 0 0 6px #6b0000;
+}
+
+#add-posts {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 40px;
+  margin: auto;
+}
+
+.post {
+  position: relative;
+  width: 400px;
+  background: #c7f0db;
+  padding: 10px 20px 20px 20px;
+  border-radius: 3vh;
+  -webkit-box-shadow: 15px 15px 0 #464159;
+          box-shadow: 15px 15px 0 #464159;
+  margin-bottom: 5vh;
+}
+
+.post h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.post p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.post .edit-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border: 0;
+  background: #464159;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5px 0px 5px;
+  border-radius: 1vh;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  outline: none;
+}
+
+.post .edit-button:after {
+  content: '';
+  height: 10px;
+  width: 40px;
+}
+
+.post .edit-button:focus {
+  -webkit-box-shadow: 0 0 0 3px #c7f0db, 0 0 0 6px #6c7b95;
+          box-shadow: 0 0 0 3px #c7f0db, 0 0 0 6px #6c7b95;
+}
+
+.update-post {
+  left: 20px;
+}
+
+#new, #edit {
+  background: #6c7b95;
+  padding: 20px;
+  border-radius: 10vh;
+  width: 210px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#new {
+  width: 220px;
+}
+
+#edit {
+  background: #c7f0db;
+  color: #464159;
+}
+
+.new-post {
+  width: 400px;
+  height: 400px;
+  background: #464159;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  border-radius: 2vh;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.new-post label {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.new-post input[type=text] {
+  font-size: 1.5rem;
+  outline: none;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 10vh;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.new-post input[type=text]:focus {
+  -webkit-box-shadow: 0 0 0 5px #464159, 0 0 0 10px #6c7b95;
+          box-shadow: 0 0 0 5px #464159, 0 0 0 10px #6c7b95;
+}
+
+.new-post button {
+  border: 0;
+  border-radius: 10vh;
+  font-size: 2rem;
+  width: 200px;
+  padding: 10px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  background: #c7f0db;
+  color: #464159;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  outline: none;
+}
+
+.new-post button:focus {
+  -webkit-box-shadow: 0 0 0 5px #464159, 0 0 0 10px #6c7b95;
+          box-shadow: 0 0 0 5px #464159, 0 0 0 10px #6c7b95;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

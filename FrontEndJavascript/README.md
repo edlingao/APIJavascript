@@ -1,0 +1,1 @@
+# This is a frontend page that fetch info from the API
